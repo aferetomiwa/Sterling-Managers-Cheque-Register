@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Pacifico&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:wght@200&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    font-family: 'Zen Maru Gothic';
+}
+
+#logo {
+    /* width: 20%; */
+    height: 70px;
+    margin: 5px;
+
+}
+
+h1 {
+    color: gray;
+    font-weight: bold;
+    margin: auto;
+    font-size: 36px;
+    display: inline-block;
+    position: relative;
+}
+
+header {
+    display: flex;
+    width: auto;
+    background-color: white;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    Margin-left: 5rem;
+}
+
+main {
+    display: flex;
+    margin: auto;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #C50000;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    text-align: right;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    color: #FFFDEF;
+    background-color: #C50000;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #E70000;
+    color: white;
+}
+  
+
+.content {
+    background-color: #F1F1F1;
+    margin-left: 200px;
+    width: 100%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.auth-msg {
+    text-align: center;
+    color: #FF9C91;
+    margin: auto;
+    padding: 0 2rem;
+    background-color: azure;
+    width: fit-content;
+}
+
+.auth-msg span {
+    color: red;
+}
+
+section.content div {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section.content div p{
+    /* margin-right: 20rem; */
+    background-color: #C50000;
+    color: white;
+    font-weight: 1000;
+    padding: 6px 5rem 6px 2rem;
+    /* border-top-right-radius: 20px; */
+}
+
+table {
+    margin: auto;
+    background-color: white;
+    width: 70%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    .content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+}
