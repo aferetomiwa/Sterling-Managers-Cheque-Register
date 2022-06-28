@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managers cheque-Add a new mc</title>
+
+    <link rel="stylesheet" href="newmc.css">
+</head>
+
+<body>
+    <nav>
+        <!-- logo -->
+
+        <img src="img/sterling-logo-removebg-preview.png" alt="">
+        <h2>Managers Cheque Register</h2>
+
+        <!-- user-info -->
+
+        <div class="ui">
+            <div class="img">
+                <img src="img/user-solid.svg" alt="">
+            </div>
+            <div class="details">
+                <p>Hi, Dabo<br>Branch<br>CEMP</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+
+    <ul class="sidebar">
+
+        <li>
+            <a href="">Dashboard</a>
+        </li>
+
+        <li id="no">
+            <a href="#">Add New MC</a>
+        </li>
+
+        <li>
+            <a href="#">Add New Series</a>
+        </li>
+    </ul>
+
+    <!-- main -->
+
+    <main>
+        <div class="main" id="main">
+            <h1>Register Cheque</h1>
+            <form action="" id="form">
+                <label for="chequenumber">Cheque Number</label>
+                <input type="text" id="chequenumber" name="chequenumber" placeholder="cheque number" required/><br>
+
+                <label for="dateissued">Date Issued</label>
+                <input type="date" id="dateissued" name="dateissued" required/><br>
+
+                <label for="accno">Account Number</label>
+                <input type="number" id="accno" name="accno" placeholder="Enter Account Number" required/><br>
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount" placeholder="Amount" required/><br>
+
+                <label for="beneficiary">Beneficiary Name</label>
+                <input type="text" id="chequenumber" name="chequenumber" required/><br>
+            </form>
+
+            <div class="close">
+                <div class="update">
+                    <label for="update">Update Status</label>
+                    <select name="select" id="select">
+                    <option value="">Select status </option>
+                    <option value="submitted">Submitted</option>
+                    <option value="active">Active</option>
+                    <option value="settled">Settled</option>
+                    <option value="repurchased">Repurchased</option>
+                </select>
+                </div>
+
+                <div class="submit">
+                    <button><a href="#">Submit</a></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="mc1.js"></script>
+</body>
+
+</html>
